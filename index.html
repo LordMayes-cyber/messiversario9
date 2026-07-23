@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16152f">
+  <title>9 meses, mi amor ✨</title>
+  <style>
+    :root{--noche:#16152f;--violeta:#7770be;--luz:#fff1c7;--rosa:#e8b8ce}
+    *{box-sizing:border-box}body{margin:0;color:#fff;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--noche);min-height:100vh;overflow-x:hidden}
+    body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px;opacity:.25}body::after{background-size:79px 79px;background-position:19px 31px;opacity:.16}
+    header{min-height:88vh;display:grid;place-items:center;padding:55px 22px;text-align:center;position:relative;background:radial-gradient(circle at 50% 34%,#5d5683 0,transparent 36%)}
+    .moon{width:150px;height:150px;margin:auto;border-radius:50%;background:var(--luz);box-shadow:0 0 80px #fff1c777;display:grid;place-items:center;color:var(--noche);font:800 70px/1 Georgia}
+    h1{font:700 clamp(38px,8vw,78px)/1.05 Georgia;margin:28px 0 16px}.lead{max-width:680px;margin:auto;font-size:clamp(17px,2.4vw,22px);line-height:1.65;color:#eee9ff}
+    .primary{margin-top:28px;border:1px solid #ffffff55;border-radius:999px;padding:14px 24px;color:#fff;background:#ffffff16;backdrop-filter:blur(8px);cursor:pointer;font-weight:700;font-size:16px;transition:.25s}.primary:hover{background:#ffffff2b;transform:translateY(-2px)}
+    main{position:relative;z-index:1;padding:20px 6vw 90px}.constellation{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+    figure{margin:0;position:relative;border-radius:22px;overflow:hidden;min-height:310px;background:#272344;box-shadow:0 18px 55px #0006;border:1px solid #ffffff1f}figure:nth-child(2),figure:nth-child(7){transform:translateY(34px)}figure img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s}figure:hover img{transform:scale(1.055)}figcaption{position:absolute;inset:auto 0 0;padding:42px 16px 16px;background:linear-gradient(transparent,#0b0a1ddd);font:600 15px/1.4 Georgia}
+    .wish{grid-column:span 2;min-height:210px;display:grid;place-items:center;text-align:center;padding:35px;border:1px dashed #fff5;background:linear-gradient(135deg,#5d568388,#a76c9488);border-radius:22px}.wish strong{font:700 clamp(26px,4vw,42px)/1.2 Georgia}.wish span{display:block;margin-top:12px;color:#f5dce8}
+    dialog{border:0;border-radius:26px;padding:0;max-width:min(690px,92vw);max-height:88vh;color:#332942;background:#fffaf4;box-shadow:0 35px 120px #000b}dialog::backdrop{background:#090817dd;backdrop-filter:blur(6px)}
+    .letter{padding:clamp(28px,6vw,58px);background:radial-gradient(circle at 100% 0,#eadcf8 0 12%,transparent 30%),#fffaf4}.letter h2{font:700 clamp(29px,6vw,46px)/1.1 Georgia;color:#514a90;text-align:center;margin:0 0 24px}.letter p{font:17px/1.8 Georgia;text-align:justify}.close{float:right;position:sticky;top:10px;border:0;border-radius:50%;width:38px;height:38px;background:#514a90;color:white;cursor:pointer}.signature{text-align:right!important;font-style:italic;color:#514a90;font-weight:700}
+    @media(max-width:800px){.constellation{grid-template-columns:repeat(2,1fr)}figure:nth-child(2),figure:nth-child(7){transform:none}}
+    @media(max-width:520px){header{min-height:78vh}.constellation{grid-template-columns:1fr}.wish{grid-column:span 1}figure{min-height:420px}.letter p{text-align:left}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="moon" aria-hidden="true">9</div>
+      <h1>Nueve meses bajo<br>el mismo cielo</h1>
+      <p class="lead">No importa la distancia ni el día: siempre encuentro una razón para sentirme afortunado de compartir mi vida con usted.</p>
+      <button class="primary" type="button" onclick="carta.showModal()">Descubrir mi mensaje ✨</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="constellation" aria-label="Constelación de recuerdos">
+        <figure><img src="img/1.jpeg" alt="Una selfie juntos en una noche especial" loading="lazy"><figcaption>Una historia que sigue creciendo</figcaption></figure>
+        <figure><img src="img/2.jpeg" alt="Sonriendo juntos bajo las luces de la noche" loading="lazy"><figcaption>Las aventuras saben mejor a su lado</figcaption></figure>
+        <figure><img src="img/3.jpeg" alt="Abrazados durante una celebración" loading="lazy"><figcaption>Su alegría ilumina mis días</figcaption></figure>
+        <figure><img src="img/4.jpeg" alt="Un retrato feliz durante la celebración" loading="lazy"><figcaption>Siempre encuentro paz con usted</figcaption></figure>
+      <div class="wish"><div><strong>Mi deseo número nueve:</strong><span>seguir sumando meses, recuerdos y motivos para amarla.</span></div></div>
+        <figure><img src="img/5.jpeg" alt="Una sonrisa compartida en una noche especial" loading="lazy"><figcaption>Mi persona favorita</figcaption></figure>
+        <figure><img src="img/6.jpeg" alt="Un abrazo bajo el cielo nocturno" loading="lazy"><figcaption>Usted convierte lo simple en inolvidable</figcaption></figure>
+        <figure><img src="img/7.jpeg" alt="Una selfie sonriente durante la noche" loading="lazy"><figcaption>Nuestro amor, nuestro refugio</figcaption></figure>
+        <figure><img src="img/8.jpeg" alt="Un abrazo lleno de cariño" loading="lazy"><figcaption>Nueve meses eligiéndonos</figcaption></figure>
+    </section>
+  </main>
+
+  <dialog id="carta" aria-labelledby="titulo">
+    <article class="letter">
+      <button class="close" type="button" onclick="carta.close()" aria-label="Cerrar">✕</button>
+      <h2 id="titulo">Felices 9 meses, mi reina</h2>
+      <p>Ya son nueve meses compartiendo esta historia tan nuestra. Nueve meses en los que he aprendido que el amor también vive en la paciencia, en los pequeños detalles, en las conversaciones largas y en las ganas de arreglar las cosas cuando algo se complica.</p>
+      <p>Gracias por ser mi compañera, por escucharme, por hacerme reír y por regalarme tantos recuerdos que ahora forman parte de mis días favoritos. Cada momento con usted tiene algo especial, incluso aquellos que parecen sencillos.</p>
+      <p>Me siento muy orgulloso de nosotros. Hemos seguido avanzando, aprendiendo a querernos mejor y demostrando que, cuando ambos cuidamos lo nuestro, podemos superar cualquier distancia u obstáculo.</p>
+      <p>La quiero muchísimo, amor. Deseo que sigamos mirando hacia el mismo futuro, acompañándonos y celebrando cada paso. Feliz mesiversario; usted sigue siendo mi estrella favorita. ❤️</p>
+      <p class="signature">Con todo mi amor.</p>
+    </article>
+  </dialog>
+  <script>
+    const carta=document.getElementById('carta');
+    carta.addEventListener('click',e=>{if(e.target===carta)carta.close()});
+  </script>
+</body>
+</html>
